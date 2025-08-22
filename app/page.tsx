@@ -1,4 +1,10 @@
 import Image from "next/image";
+// app/page.tsx (home)
+import { pageMeta, siteName, defaultDesc } from "@/lib/seo";
+
+export const metadata = pageMeta("/", siteName, defaultDesc, {
+  type: "website",
+});
 
 export default function Home() {
   return (
