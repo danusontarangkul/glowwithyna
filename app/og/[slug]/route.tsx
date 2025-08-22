@@ -3,8 +3,8 @@ import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
 import { getPostBySlug } from "@/lib/posts-registry";
 
-export const runtime = "edge" as const;
-export const size = { width: 1200, height: 630 } as const;
+export const runtime = "edge"; // ⬅️ no `as const`
+export const size = { width: 1200, height: 630 }; // ⬅️ no `as const`
 export const contentType = "image/png";
 
 type MaybePromise<T> = T | Promise<T>;
@@ -17,7 +17,7 @@ export async function GET(
   _req: NextRequest,
   ctx: { params: MaybePromise<{ slug: string }> }
 ) {
-  const { slug } = await ctx.params; // works whether params is a promise or not
+  const { slug } = await ctx.params;
 
   const post = getPostBySlug(slug);
   const title = post?.title ?? humanize(slug);
