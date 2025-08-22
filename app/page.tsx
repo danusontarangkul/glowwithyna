@@ -1,8 +1,8 @@
+import { siteDescription, siteName } from "@/consts";
+import { pageMeta } from "@/lib/seo";
 import Image from "next/image";
-// app/page.tsx (home)
-import { pageMeta, siteName, defaultDesc } from "@/lib/seo";
 
-export const metadata = pageMeta("/", siteName, defaultDesc, {
+export const metadata = pageMeta("/", siteName, siteDescription, {
   type: "website",
 });
 

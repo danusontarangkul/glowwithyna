@@ -1,4 +1,5 @@
 // app/og/[slug]/route.tsx
+import { siteName, siteUrl } from "@/consts";
 import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
 
@@ -51,7 +52,7 @@ export async function GET(
             opacity: 0.9,
           }}
         >
-          ✨ Your Blog
+          {siteName}
         </div>
 
         <div
@@ -94,7 +95,7 @@ export async function GET(
             opacity: 0.95,
           }}
         >
-          yourdomain.com
+          {siteUrl}
         </div>
       </div>
     ),

@@ -1,10 +1,9 @@
 // lib/seo.ts
+import { siteDescription, siteName, siteUrl } from "@/consts";
 import type { Metadata } from "next";
 
 /** ---- Site-wide constants (edit these) ---- */
-export const siteUrl = "https://yourdomain.com"; // ← change me
-export const siteName = "Your Blog"; // ← change me
-export const defaultDesc = "Makeup & self-improvement guides for women.";
+
 export const defaultOgFallback = "/og/default.png"; // optional static fallback in /public/og
 
 type PageMetaOpts = {
@@ -33,7 +32,7 @@ type PageMetaOpts = {
 export function pageMeta(
   path: string, // e.g. "/blog/my-post"
   title: string,
-  description: string = defaultDesc,
+  description: string = siteDescription,
   opts: PageMetaOpts = {}
 ): Metadata {
   const urlAbs = new URL(path, siteUrl).toString();

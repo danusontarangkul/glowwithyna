@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { siteUrl, siteName, siteDescription } from "@/consts";
 import "./globals.css";
+import BlogHeader from "@/components/header/BlogHeader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,21 +14,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://glowwithyna.vercel.app";
-const siteName = "Glow With Yna";
-const siteDesc = "Makeup & self-improvement guides for women.";
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: siteName, template: `%s · ${siteName}` },
-  description: siteDesc,
+  description: siteDescription,
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: siteUrl,
     siteName,
     title: siteName,
-    description: siteDesc,
+    description: siteDescription,
   },
   twitter: { card: "summary_large_image", site: "@your_handle" },
   robots: { index: true, follow: true },
@@ -49,15 +47,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="">
+          <BlogHeader />
+          {children}
+        </div>
       </body>
     </html>
   );
