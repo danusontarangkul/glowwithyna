@@ -48,7 +48,7 @@ export async function GET(
             opacity: 0.9,
           }}
         >
-          ✨ Your Blog
+          ✨ Glow With Yna
         </div>
 
         <div
