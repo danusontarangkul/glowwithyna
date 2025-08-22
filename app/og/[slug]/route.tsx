@@ -3,9 +3,11 @@ import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
 import { getPostBySlug } from "@/lib/posts-registry";
 
-export const runtime = "edge"; // literal
+export const runtime = "edge" as const;
 export const size = { width: 1200, height: 630 } as const;
 export const contentType = "image/png";
+
+type MaybePromise<T> = T | Promise<T>;
 
 function humanize(slug: string) {
   return slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -13,10 +15,12 @@ function humanize(slug: string) {
 
 export async function GET(
   _req: NextRequest,
-  { params }: { params: { slug: string } }
+  ctx: { params: MaybePromise<{ slug: string }> }
 ) {
-  const post = getPostBySlug(params.slug);
-  const title = post?.title ?? humanize(params.slug);
+  const { slug } = await ctx.params; // works whether params is a promise or not
+
+  const post = getPostBySlug(slug);
+  const title = post?.title ?? humanize(slug);
   const subtitle = post?.description ? post.description.slice(0, 120) : "";
 
   return new ImageResponse(
