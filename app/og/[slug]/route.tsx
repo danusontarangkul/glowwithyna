@@ -1,13 +1,13 @@
 // app/og/[slug]/route.tsx
 import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
-import { getPostBySlug } from "@/lib/posts-registry";
 
-export const runtime = "edge"; // ⬅️ no `as const`
-export const size = { width: 1200, height: 630 }; // ⬅️ no `as const`
+export const runtime = "nodejs"; // ⬅️ switch to Node runtime
+export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 type MaybePromise<T> = T | Promise<T>;
+const GRADIENT = "linear-gradient(135deg, #ec4899 0%, #f472b6 100%)";
 
 function humanize(slug: string) {
   return slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -19,9 +19,12 @@ export async function GET(
 ) {
   const { slug } = await ctx.params;
 
+  // ⬇️ Lazy import here (after Node runtime is set)
+  const { getPostBySlug } = await import("@/lib/posts-registry");
   const post = getPostBySlug(slug);
+
   const title = post?.title ?? humanize(slug);
-  const subtitle = post?.description ? post.description.slice(0, 120) : "";
+  const subtitle = post?.description?.slice(0, 120) ?? "";
 
   return new ImageResponse(
     (
@@ -33,7 +36,7 @@ export async function GET(
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          background: "linear-gradient(135deg, #ec4899 0%, #f472b6 100%)",
+          background: GRADIENT,
           color: "white",
           padding: 64,
         }}
@@ -48,7 +51,7 @@ export async function GET(
             opacity: 0.9,
           }}
         >
-          ✨ Glow With Yna
+          ✨ Your Blog
         </div>
 
         <div
@@ -95,6 +98,6 @@ export async function GET(
         </div>
       </div>
     ),
-    { width: size.width, height: size.height }
+    size
   );
 }
