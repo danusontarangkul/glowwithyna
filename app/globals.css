@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #ffeffc;
   --foreground: #171717;
 }
 
@@ -27,4 +27,16 @@ body {
 
 @theme {
   --color-headerBackground: #f2c7ec;
+}
+
+@layer base {
+  main {
+    @apply max-w-screen-md mx-auto pb-10;
+  }
+  nav {
+    @apply max-w-screen-md mx-auto;
+  }
+  article {
+    @apply max-w-screen-md mx-auto;
+  }
 }

@@ -1,9 +1,8 @@
-// app/og/[slug]/route.tsx
 import { siteName, siteUrl } from "@/consts";
 import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
 
-export const runtime = "nodejs"; // ⬅️ switch to Node runtime
+export const runtime = "nodejs";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -20,7 +19,6 @@ export async function GET(
 ) {
   const { slug } = await ctx.params;
 
-  // ⬇️ Lazy import here (after Node runtime is set)
   const { getPostBySlug } = await import("@/lib/posts-registry");
   const post = getPostBySlug(slug);
 
