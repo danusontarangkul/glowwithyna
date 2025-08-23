@@ -6,15 +6,19 @@ import H1 from "@/components/header/H1";
 import { DISCLAIMER } from "@/consts";
 import { PostBodyComponent } from "@/components/blog/post-body-types";
 
-type PageProps = { params: { slug: string } };
+type PageProps = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
   return allPosts.map(({ slug }) => ({ slug }));
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
-  const post = getPostBySlug(params.slug);
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
   if (!post) return { title: "Not found" };
+
   return pageMeta(`/blog/${post.slug}`, post.title, post.description, {
     type: "article",
     images: post.cardImage ?? `/og/${post.slug}.png`,
@@ -22,7 +26,8 @@ export function generateMetadata({ params }: PageProps): Metadata {
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
-  const post = getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
   if (!post) return notFound();
 
   let Body: PostBodyComponent | null = null;
@@ -41,7 +46,6 @@ export default async function BlogPostPage({ params }: PageProps) {
         <p className="mt-1 text-sm text-gray-600 mb-6">
           <span className="font-semibold">Disclaimer:</span> {DISCLAIMER}
         </p>
-
         <Body meta={post} />
       </article>
     </main>

@@ -1,6 +1,8 @@
 import CategoryLevelBar from "@/components/nav/CategoryLevelBar";
+import CategoryList from "@/components/category/CategoryList";
 import { siteDescription, siteName } from "@/consts";
 import { pageMeta } from "@/lib/seo";
+import { allPosts } from "@/lib/posts-registry";
 
 export const metadata = pageMeta("/", siteName, siteDescription, {
   type: "website",
@@ -16,6 +18,10 @@ export default function Home() {
         ]}
         className="pt-4"
       />
+
+      <section className="">
+        <CategoryList posts={allPosts} />
+      </section>
     </main>
   );
 }
