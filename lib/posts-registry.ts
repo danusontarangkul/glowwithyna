@@ -13,6 +13,18 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/habits-to-start-eating-healthy/Habits-to-eating-healthier.webp",
   },
+  {
+    slug: "3-day-beginner-healthy-eating-plan",
+    title: "3-Day Beginner Healthy Eating Plan (Simple & Time-Saving Tools)",
+    description:
+      "A beginner-friendly 3-day plan with simple, balanced meals and the kitchen tools that make healthy eating fast, affordable, and sustainable.",
+    date: "2025-08-24",
+    categories: ["self-care", "routines"],
+    imageAlt:
+      "Three-day healthy eating plan with simple meals and helpful kitchen tools.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/3-Day%20Beginner%20Healthy%20Eating%20Plan/Healthy%20eating%20plan.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
