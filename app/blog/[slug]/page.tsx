@@ -43,7 +43,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     <main className="pt-6">
       <article className="px-4 md:px-0">
         <H1>{post.title}</H1>
-        <p className="mt-1 text-sm text-gray-600 mb-6">
+        <p className="mt-2.5 text-sm text-gray-600 mb-6">
           <span className="font-semibold">Disclaimer:</span> {DISCLAIMER}
         </p>
         <Body meta={post} />

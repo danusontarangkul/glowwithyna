@@ -12,7 +12,7 @@ export default function PostBody({
   return (
     <div
       className={cn(
-        "leading-relaxed [&>p]:my-5 [&>h2]:mt-10 [&>h2]:mb-3 [&>h2]:text-3xl [&>h2]:font-semibold",
+        "leading-relaxed [&>p]:my-5 [&>h2]:mt-10 [&>h2]:mb-3 [&>h2]:text-xl [&>h2]:font-semibold",
         className
       )}
     >

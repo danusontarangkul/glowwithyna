@@ -25,8 +25,8 @@ const Body: PostBodyComponent = () => (
     <Image
       src="https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/habits-to-start-eating-healthy/water-bottle.webp"
       alt="Reusable water bottle on a desk"
-      width={200}
-      height={400}
+      width={100}
+      height={250}
       className="rounded-xl border block mx-auto"
     />
 
@@ -57,8 +57,8 @@ const Body: PostBodyComponent = () => (
     <Image
       src="https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/habits-to-start-eating-healthy/veg-cutter.webp"
       alt="Vegetable cutter on a kitchen counter"
-      width={500}
-      height={300}
+      width={300}
+      height={200}
       className="rounded-xl border block mx-auto"
     />
 
@@ -88,8 +88,8 @@ const Body: PostBodyComponent = () => (
     <Image
       src="https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/habits-to-start-eating-healthy/food-cont.webp"
       alt="Meal prep food containers filled with veggies"
-      width={500}
-      height={300}
+      width={300}
+      height={200}
       className="rounded-xl border block mx-auto"
     />
 
@@ -118,8 +118,8 @@ const Body: PostBodyComponent = () => (
     <Image
       src="https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/habits-to-start-eating-healthy/pots.webp"
       alt="Set of cookware pots and pans"
-      width={500}
-      height={300}
+      width={300}
+      height={200}
       className="rounded-xl border block mx-auto"
     />
 
@@ -149,8 +149,8 @@ const Body: PostBodyComponent = () => (
     <Image
       src="https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/habits-to-start-eating-healthy/fruit-snacks.webp"
       alt="Assorted fruit snack bars"
-      width={500}
-      height={300}
+      width={300}
+      height={200}
       className="rounded-xl border block mx-auto"
     />
 
