@@ -32,8 +32,8 @@ const Body: PostBodyComponent = () => (
       and a sunhat.
     </p>
     <Image
-      src="https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/Summer%20Outfit%20Ideas/1E524F72-011D-4B69-B7CA-19F21C323A23.webp"
-      alt="Flowy summer dress in Jeju"
+      src="https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/Summer%20Outfit%20Ideas/922DC14C-0C0F-4CD7-B552-EDB8673F0D78.webp"
+      alt="Casual chic shorts styled for summer travel"
       width={300}
       height={400}
       className="block mx-auto"
@@ -59,8 +59,8 @@ const Body: PostBodyComponent = () => (
       versatile for multiple looks.
     </p>
     <Image
-      src="https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/Summer%20Outfit%20Ideas/922DC14C-0C0F-4CD7-B552-EDB8673F0D78.webp"
-      alt="Casual chic shorts styled for summer travel"
+      src="https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/Summer%20Outfit%20Ideas/1E524F72-011D-4B69-B7CA-19F21C323A23.webp"
+      alt="Flowy summer dress in Jeju"
       width={300}
       height={400}
       className="block mx-auto"
