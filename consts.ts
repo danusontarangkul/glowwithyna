@@ -7,8 +7,7 @@ export const CATEGORY_EMOJI: Record<string, string> = {
   "make-up": "💄",
   "self-care": "🌸",
   "home-finds": "🏡",
-  books: "📚",
-
+  fashion: "👗",
   "skin-care/cleansers": "🫧",
   "skin-care/sunscreen": "🧴",
   "make-up/base": "🎨",
@@ -18,6 +17,7 @@ export const CATEGORY_EMOJI: Record<string, string> = {
   "self-care/routines": "⏰",
   "self-care/routines/evening": "🌙",
   "home-finds/bathroom": "🛁",
+  "fashion/outfit-ideas": "💡",
 };
 
 export function emojiForChild(path: string[], childSlug: string): string {

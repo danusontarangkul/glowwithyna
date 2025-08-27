@@ -37,6 +37,18 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/Summer%20Outfit%20Ideas/Summer%20outfit%20Ideas.webp",
   },
+  {
+    slug: "citizenship-ceremony-outfit",
+    title: "My Citizenship Ceremony Outfit",
+    description:
+      "Celebrating a huge milestone—becoming a U.S. citizen. The chic, comfortable outfit I wore on this emotional, unforgettable day.",
+    date: "2025-08-28",
+    categories: ["fashion", "outfit-ideas"],
+    imageAlt:
+      "Chic square pants and elegant white top styled for a citizenship ceremony.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/citizenship-outfit-idea/Naturalization%20outfit-2.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal

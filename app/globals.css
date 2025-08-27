@@ -39,4 +39,7 @@ body {
   article {
     @apply max-w-screen-md mx-auto;
   }
+  a {
+    @apply hover:underline;
+  }
 }
