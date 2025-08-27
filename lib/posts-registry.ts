@@ -25,6 +25,18 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/3-Day%20Beginner%20Healthy%20Eating%20Plan/Healthy%20eating%20plan.webp",
   },
+  {
+    slug: "summer-outfit-ideas",
+    title: "Summer Outfit Diary: What I Wore in Jeju",
+    description:
+      "My summer outfit diary from Jeju Island—flowy dresses, chic shorts, lightweight tops, and comfy sneakers. Breathable, packable, and budget-friendly finds perfect for hot summer trips.",
+    date: "2025-08-27",
+    categories: ["fashion", "outfit-ideas"],
+    imageAlt:
+      "Summer outfits in Jeju Island with flowy dresses, shorts, and sneakers.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/Summer%20Outfit%20Ideas/Summer%20outfit%20Ideas.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
