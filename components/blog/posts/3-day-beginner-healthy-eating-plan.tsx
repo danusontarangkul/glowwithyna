@@ -4,6 +4,7 @@ import PostBody from "../PostBody";
 
 const Body: PostBodyComponent = () => (
   <PostBody>
+    
     <p>
       Starting a healthier lifestyle doesn&rsquo;t mean complicated recipes or
       giving up your favorite foods. The key is to keep meals simple, balanced,

@@ -49,6 +49,18 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/citizenship-outfit-idea/Naturalization%20outfit-2.webp",
   },
+  {
+    slug: "lemon-ginger-wellness-shot",
+    title: "Lemon Ginger Wellness Shot Recipe 🍋",
+    description:
+      "An easy, energizing wellness shot with lemon and ginger for immunity, digestion, and glowing skin. Simple recipe, quick to make, and my favorite juicer pick.",
+    date: "2025-08-29",
+    categories: ["self-care", "gut-health"],
+    imageAlt:
+      "Fresh lemon ginger wellness shot served in a small glass with lemons and ginger beside it.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/lemon-ginger-shot-wellness-recipe/2024_001_Wellness-Shot-Kurkuma-05.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
