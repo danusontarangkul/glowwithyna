@@ -19,7 +19,7 @@ export default function Home() {
         className="pt-4"
       />
 
-      <section className="">
+      <section className="px-4 md:px-0">
         <CategoryList posts={allPosts} />
       </section>
     </main>
