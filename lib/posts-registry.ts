@@ -73,6 +73,18 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/best-korean-cleansers-for-hyperpigmentation/Hyperpigmentation-Cleansers.webp",
   },
+  {
+    slug: "best-korean-toners-for-hyperpigmentation",
+    title: "Best Korean Toners for Hyperpigmentation",
+    description:
+      "Lightweight and soothing Korean toners that hydrate, calm irritation, and brighten uneven skin tone—helping fade dark spots and support a radiant complexion.",
+    date: "2025-08-31",
+    categories: ["skincare", "toners"],
+    imageAlt:
+      "Collection of Korean toners recommended for brightening skin and reducing hyperpigmentation.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/best-korean-toners-for-hyperpigmentation/Toner%20pads-2.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
