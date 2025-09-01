@@ -4,6 +4,7 @@ import { siteUrl, siteName, siteDescription } from "@/consts";
 import "./globals.css";
 import BlogHeader from "@/components/header/BlogHeader";
 import { ScrollToTop } from "@/components/helper/ScrollToTop";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -58,7 +59,8 @@ export default function RootLayout({
       >
         <div className="">
           <ScrollToTop />
-          <BlogHeader /> {children}
+          <BlogHeader />
+          <Analytics /> {children}
         </div>
       </body>
     </html>
