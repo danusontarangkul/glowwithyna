@@ -85,6 +85,18 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/best-korean-toners-for-hyperpigmentation/Toner%20pads-2.webp",
   },
+  {
+    slug: "feel-good-habits-everyday",
+    title: "Simple Feel-Good Habits for Every Part of Your Day",
+    description:
+      "Small, intentional habits for morning, midday, afternoon, and night—hydration, movement, mindful breaks, and winding down—to boost energy, balance, and peace.",
+    date: "2025-09-02",
+    categories: ["self-care", "routines"],
+    imageAlt:
+      "Daily self-care essentials including water, journal, tea, and cozy setup representing balanced routines.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/feel-good-habits/Feel%20good%20habits.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
