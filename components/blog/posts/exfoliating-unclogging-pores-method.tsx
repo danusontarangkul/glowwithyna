@@ -17,7 +17,6 @@ const Body: PostBodyComponent = () => (
       Lindsay Cooling Modeling Mask. My skin felt cleaner, smoother, and so
       refreshed, almost like I had a mini facial at home.
     </p>
-
     <h2>Why I Loved This Routine</h2>
     <ul className="[&>li]:my-2 list-disc pl-6">
       <li>
@@ -34,7 +33,6 @@ const Body: PostBodyComponent = () => (
         clearer in the long run.
       </li>
     </ul>
-
     <h2>Step-by-Step Routine I Followed</h2>
     <h3>Ilso Sebum Softener</h3>
     <p>
@@ -48,7 +46,6 @@ const Body: PostBodyComponent = () => (
       height={500}
       className="block mx-auto"
     />
-
     <h3>Green Tomato Clay Cleanser</h3>
     <p>Wash your face thoroughly to remove any remaining impurities.</p>
     <Image
@@ -58,13 +55,11 @@ const Body: PostBodyComponent = () => (
       height={500}
       className="block mx-auto mt-8"
     />
-
     <h3>Lindsay Cooling Modeling Mask</h3>
     <p>
       Apply the mask as directed, then rinse off. Finish with your favorite
       moisturizer to keep skin hydrated.
     </p>
-
     <Image
       src="https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/exfoliating-and-unclogging-pores-method-that-actually-worked-for-me/modeling%20mask.webp"
       alt="Lindsay Cooling Modeling Mask"
@@ -72,8 +67,7 @@ const Body: PostBodyComponent = () => (
       height={500}
       className="block mx-auto mt-8"
     />
-
-    <h2>Here's What I Used</h2>
+    <h2>Here&rsquo;s What I Used</h2>{" "}
     <ul className="[&>li]:my-2 list-disc pl-6">
       <li>
         <a
@@ -121,7 +115,6 @@ const Body: PostBodyComponent = () => (
         </a>
       </li>
     </ul>
-
     <p>
       <strong>Tip:</strong> Use the Ilso Sebum Softener once a week or as needed
       whenever you feel like your skin needs some extra exfoliating.
