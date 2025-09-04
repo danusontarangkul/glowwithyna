@@ -120,6 +120,19 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/easy-chia-pudding-recipes/Chia%20Pudding%20Recipe.webp",
   },
+  {
+    slug: "exfoliating-unclogging-pores-method",
+    title:
+      "Exfoliating and Unclogging Pores Method That Actually Worked for Me",
+    description:
+      "A simple, effective pore-care routine using Ilso Sebum Softener, Green Tomato Clay Cleanser, and Lindsay Cooling Modeling Mask that helps remove sebum and refresh the skin.",
+    date: "2025-09-02",
+    categories: ["self-care", "routines", "skincare", "exfoliants"],
+    imageAlt:
+      "Skincare products including Ilso Sebum Softener, Green Tomato Clay Cleanser, and Lindsay Cooling Modeling Mask for unclogging pores.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/exfoliating-and-unclogging-pores-method-that-actually-worked-for-me/Exfoliating%20Products.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
