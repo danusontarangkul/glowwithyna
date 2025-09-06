@@ -133,6 +133,18 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/exfoliating-and-unclogging-pores-method-that-actually-worked-for-me/Exfoliating%20Products.webp",
   },
+  {
+    slug: "3-self-help-books-that-changed-my-life",
+    title: "3 Self-Help Books That Changed How I See Life",
+    description:
+      "Atomic Habits, The Subtle Art of Not Giving a F*ck, and Don’t Believe Everything You Think — three books that reshaped how I approach growth, mindset, and everyday life.",
+    date: "2025-09-06",
+    categories: ["self-care", "reads"],
+    imageAlt:
+      "Stack of inspiring self-help books including Atomic Habits and The Subtle Art of Not Giving a F*ck.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/best-self-help-books-to-read/self-help%20books.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
