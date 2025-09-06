@@ -145,6 +145,18 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/best-self-help-books-to-read/self-help%20books.webp",
   },
+  {
+    slug: "best-lipsticks-for-warm-and-cool-undertones",
+    title: "The Best Lipsticks for Warm and Cool Undertones",
+    description:
+      "Find your perfect lipstick shade by matching it to your undertone—cool, warm, or neutral. Here are top Amazon picks that flatter every skin tone.",
+    date: "2025-09-06",
+    categories: ["self-care", "makeup"],
+    imageAlt:
+      "Collection of warm and cool-toned lipsticks including pinks, berries, corals, and peachy nudes.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/warm-and-cool-toned-lipsticks/warm%20and%20cool%20tone%20lipsticks.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
