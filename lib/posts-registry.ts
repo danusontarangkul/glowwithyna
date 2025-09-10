@@ -157,6 +157,18 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/warm-and-cool-toned-lipsticks/warm%20and%20cool%20tone%20lipsticks.webp",
   },
+  {
+    slug: "starting-eat-clean-amazon-grocery-guide",
+    title: "Starting to Eat Clean: My Beginner-Friendly Amazon Grocery Guide",
+    description:
+      "A beginner-friendly guide to clean eating with Amazon staples for protein, veggies, fruits, snacks, whole grains, and drinks.",
+    date: "2025-09-10",
+    categories: ["self-care", "clean eating"],
+    imageAlt:
+      "Amazon clean eating grocery haul with proteins, fruits, vegetables, and pantry staples.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/beginner-friendly-amazon-grocery-guide/Grocery%20List-2.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
