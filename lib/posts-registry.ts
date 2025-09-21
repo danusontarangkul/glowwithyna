@@ -169,6 +169,31 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/beginner-friendly-amazon-grocery-guide/Grocery%20List-2.webp",
   },
+  {
+    slug: "benefits-of-matcha-cold-whisk-method",
+    title: "The Benefits of Matcha + My Cold Whisk Method",
+    description:
+      "Why matcha is worth sipping—steady energy, antioxidants, skin support, and metabolism benefits—plus a simple cold whisk technique for a smooth, frothy iced latte.",
+    date: "2025-09-20",
+    categories: ["self-care", "routines"],
+    imageAlt:
+      "Frothy iced matcha latte being whisked cold in a cup, ready to pour over ice.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/matcha-benefits/Matcha%20Benefits.webp",
+  },
+  {
+    slug: "link-between-cortisol-stress-weight-gain",
+    title:
+      "The Link Between Cortisol, Stress & Weight Gain (and What to Do About It)",
+    description:
+      "How elevated cortisol drives cravings, belly fat, and poor sleep—plus practical, science-aligned routines to lower stress and support healthy weight.",
+    date: "2025-09-20",
+    categories: ["self-care", "routines"],
+    imageAlt:
+      "Calm morning routine setup with matcha, journal, and diffuser to support lower cortisol.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/lowering-cortisol/Lowering%20Cortisol.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
