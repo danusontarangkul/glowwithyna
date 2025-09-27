@@ -194,6 +194,18 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/lowering-cortisol/Lowering%20Cortisol.webp",
   },
+  {
+    slug: "fall-outfit-idea-chic-cozy-staples",
+    title: "Fall Outfit Idea: Chic & Cozy Staples You\u2019ll Wear on Repeat",
+    description:
+      "A simple, polished fall look—white cami, grey cardigan, denim skort, brown belt, knee-high boots, and a slouchy bag—versatile layers for coffee dates to brunch.",
+    date: "2025-09-27",
+    categories: ["fashion", "outfit ideas"],
+    imageAlt:
+      "Chic fall outfit with white cami, grey cardigan, denim skort, brown belt, knee-high boots, and a slouchy bag.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/fall%20outfits/Fall%20outfits-2.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
