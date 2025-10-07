@@ -206,6 +206,30 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/fall%20outfits/Fall%20outfits-2.webp",
   },
+  {
+    slug: "chic-fall-outfit-you-can-shop-on-amazon",
+    title: "Chic Fall Outfit You Can Shop on Amazon",
+    description:
+      "Cozy-meets-polished fall look—deep red cardigan, classic denim, black belt, chunky-heel boots, and a structured black bag—easy to wear from coffee runs to casual dinners.",
+    date: "2025-10-07",
+    categories: ["fashion", "outfit ideas"],
+    imageAlt:
+      "Chic fall outfit with a deep red cardigan, denim jeans, black belt, chunky heel boots, and a structured black bag.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/fall%20outfits%20part%202/fall%20outfits%202.webp",
+  },
+  {
+    slug: "cold-weather-moisturizers-that-saved-my-skin",
+    title: "Cold Weather Moisturizers That Saved My Skin",
+    description:
+      "Cold-weather moisturizer picks for combination skin—light gel creams and rich barrier creams to keep cheeks soft, T-zone balanced, and makeup smooth all season.",
+    date: "2025-10-07",
+    categories: ["skincare", "moisturizers"],
+    imageAlt:
+      "Flatlay of winter skincare moisturizers ideal for combination skin, including gel creams and rich barrier creams.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/best%20moisturizers/Moisturizers.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
