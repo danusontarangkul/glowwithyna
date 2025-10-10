@@ -230,6 +230,18 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/best%20moisturizers/Moisturizers.webp",
   },
+  {
+    slug: "cozy-fall-home-finds",
+    title: "Cozy Fall Home Finds That Make My Space Feel So Warm & Inviting",
+    description:
+      "Simple fall upgrades—throw pillows, a candle warmer lamp, scented candles, and pumpkin accents—that instantly create a warm, peaceful, and inviting vibe without a full redecoration.",
+    date: "2025-10-10",
+    categories: ["lifestyle", "home finds"],
+    imageAlt:
+      "Cozy fall home setup with soft throw pillows, a glowing candle warmer lamp, scented candles, and neutral pumpkin decor creating a warm, inviting atmosphere.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/amazon-fall-home-finds-2025/Amazon%20Fall%20Finds.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
