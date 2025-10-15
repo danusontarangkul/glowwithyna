@@ -242,6 +242,18 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/amazon-fall-home-finds-2025/Amazon%20Fall%20Finds.webp",
   },
+  {
+    slug: "wide-calf-fall-boots",
+    title: "Amazon Wide-Calf Boots That Keep Me Warm & Stylish All Season",
+    description:
+      "Finally — stylish, cozy wide-calf boots that actually fit! These Amazon picks are comfortable, affordable, and go with everything from jeans to sweater dresses this fall and winter.",
+    date: "2025-10-14",
+    categories: ["fashion", "outfits"],
+    imageAlt:
+      "A lineup of stylish wide-calf boots in black, brown, and buckle styles placed against a fall-themed background.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/fall%20boots/wide%20calf-friendly%20boots.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal

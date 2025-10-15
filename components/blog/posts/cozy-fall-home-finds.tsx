@@ -1,6 +1,5 @@
 import { PostBodyComponent } from "../post-body-types";
 import PostBody from "../PostBody";
-import Image from "next/image";
 
 const Body: PostBodyComponent = () => (
   <PostBody>
