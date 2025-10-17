@@ -254,6 +254,18 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/fall%20boots/wide%20calf-friendly%20boots.webp",
   },
+  {
+    slug: "transitional-jackets-you-will-love-this-season",
+    title: "Transitional Jackets You'll Love This Season",
+    description:
+      "Lightweight, stylish outerwear for unpredictable fall days—short trench and cropped jacket picks that layer easily over basics and pair with jeans, skirts, or boots.",
+    date: "2025-10-16",
+    categories: ["fashion", "outfits"],
+    imageAlt:
+      "Three fall jackets—a short trench, a green cropped jacket, and a black cropped jacket—styled for a casual autumn outfit.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/fall%20jackets/Fall%20Jackets.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
