@@ -266,6 +266,18 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/fall%20jackets/Fall%20Jackets.webp",
   },
+  {
+    slug: "amazon-finds-that-make-cleaning-easier",
+    title: "Amazon Finds That Make Cleaning Easier",
+    description:
+      "Four tools that cut scrub time and reach tricky spots—scraper, crevice brushes, a portable carpet cleaner, and a steam cleaner—for a faster, fresher home routine.",
+    date: "2025-10-16",
+    categories: ["home", "cleaning"],
+    imageAlt:
+      "A curated set of cleaning tools including a scraper, crevice brushes, a portable carpet cleaner, and a steam cleaner arranged on a tidy surface.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/cleaning%20tools/Cleaning%20tools.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
