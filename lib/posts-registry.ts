@@ -278,6 +278,18 @@ const unsortedPosts: PostMeta[] = [
     cardImage:
       "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/cleaning%20tools/Cleaning%20tools.webp",
   },
+  {
+    slug: "fall-accessories-to-stay-cozy",
+    title: "Fall Accessories Every Woman Needs to Stay Cozy & Chic",
+    description:
+      "Amazon accessory picks — oversized scarves, knit beanies, thick socks, sunglasses, and warm headbands — to keep your fall outfits cozy and put-together.",
+    date: "2025-11-04",
+    categories: ["fashion", "outfits"],
+    imageAlt:
+      "Flatlay of fall accessories including an oversized scarf, knit beanie, thick socks, sunglasses, and a warm headband on a neutral background.",
+    cardImage:
+      "https://fdi5r9jawg3nkxd5.public.blob.vercel-storage.com/fall%20accessories/fall%20accessories.webp",
+  },
 ];
 
 // Export a sorted *copy* so we don't mutate the checked literal
