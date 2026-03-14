@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Glow With Yna
+
+Makeup & self-improvement guides for women. A Next.js blog with categories, SEO, and affiliate-friendly content.
+
+![Glow With Yna](assets/image.png)
+
+**Live:** [glowwithyna.vercel.app](https://glowwithyna.vercel.app)
+
+## Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **UI:** React 19, TypeScript, Tailwind CSS 4
+- **Analytics:** Vercel Analytics
+- **Deploy:** Vercel
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, pnpm, or bun
+
+### Install & Run
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server (with Turbopack)
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Other Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command         | Description             |
+| --------------- | ----------------------- |
+| `npm run dev`   | Start dev server        |
+| `npm run build` | Production build        |
+| `npm run start` | Start production server |
+| `npm run lint`  | Run ESLint              |
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- **`app/`** – Routes: home, `/about`, `/blog/[slug]`, `/category/[...segments]`, OG images, sitemap, robots
+- **`components/`** – Header, category nav, blog post bodies, recommended section, SEO/JSON-LD
+- **`lib/`** – Post registry, SEO helpers, utils
+- **`consts.ts`** – Site name/URL, category emojis, recommended slugs, disclaimer
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Blog posts live as React components under `components/blog/posts/` and are registered in `lib/posts-registry.ts`. Categories are hierarchical (e.g. `skin-care`, `make-up/base`, `fashion/outfit-ideas`).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## SEO
 
-## Deploy on Vercel
+SEO is handled in a few places:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **`lib/seo.ts`** – Central helper `pageMeta(path, title, description, opts)` builds Next.js `Metadata` for each page. It sets:
+  - `title`, `description`, and **canonical** URL
+  - **Open Graph** (type, url, title, description, images; for articles: `publishedTime`, `modifiedTime`, `authors`, `tags`)
+  - **Twitter** card (`summary_large_image`) with title, description, and optional images
+  - Optional `noindex` and `robots` overrides
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Root layout** (`app/layout.tsx`) – Defines `metadataBase`, default title template (`%s · Glow With Yna`), site-wide description, OG/Twitter defaults, favicons, and `site.webmanifest`.
+
+- **Per-page metadata** – Pages use `pageMeta()` either via `export const metadata` (e.g. home) or `generateMetadata()` (e.g. blog). Blog posts use `type: "article"` and pass an OG image (post `cardImage` or generated OG image).
+
+- **Dynamic OG images** – `app/og/[slug]/route.tsx` generates 1200×630 PNGs for each post (and fallback for unknown slugs) using Next.js `ImageResponse`, with title, short description, site name, and URL.
+
+- **Sitemap & robots** – `app/sitemap.ts` exposes a sitemap; `app/robots.ts` allows all crawlers and references the sitemap URL.
+
+- **JSON-LD** – `components/Seo/JsonLd.tsx` renders a `<script type="application/ld+json">` block for structured data when needed (e.g. Article schema).
+
+## Configuration
+
+- **Site metadata:** `consts.ts` (`siteName`, `siteDescription`, `siteUrl`)
+- **Categories & emojis:** `CATEGORY_EMOJI` in `consts.ts`
+- **Recommended posts:** `RECOMMENDED_SLUGS` in `consts.ts`
+
+## Deploy
+
+Deploy on [Vercel](https://vercel.com); connect the repo and use the default Next.js settings. Analytics are enabled via `@vercel/analytics`.
+
+## 👥 Contributors
+
+- **Danuson Tarangkul** - [github.com/danusontarangkul](https://github.com/danusontarangkul)
