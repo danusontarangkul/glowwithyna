@@ -82,4 +82,4 @@ Deploy on [Vercel](https://vercel.com); connect the repo and use the default Nex
 
 ## 👥 Contributors
 
-- **Danuson Tarangkul** - [github.com/danusontarangkul](https://github.com/danusontarangkul)
+- **David Anusontarangkul** - [github.com/danusontarangkul](https://github.com/danusontarangkul)
